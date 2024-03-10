@@ -32,7 +32,7 @@ const Title = styled.h1`
   text-shadow: 6px 0px 5px rgba(0,0,0,0.07);
 `;
 
-const Loader = styled.span`
+const Loader = styled.h1`
   text-align: center;
 `;
 
@@ -81,7 +81,7 @@ const BtnBack = styled.button`
 `
 
 
-interface dataInfo  {
+interface DataInfo  {
   id: number;
   films: string[];
   name: string;
@@ -96,7 +96,7 @@ export default function Detail() {
   const navigate = useNavigate()
 
 
-  const { isLoading, data, error } = useQuery<dataInfo[]>({
+  const { isLoading, data, error } = useQuery<DataInfo>({
     queryKey: ["charInfo", id],
     queryFn: fetchCharacter
   }) 
