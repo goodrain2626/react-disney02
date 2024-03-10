@@ -26,6 +26,7 @@ const Header = styled.header`
 const Title = styled.h2`
   font-size: 48px;
   color: #6ba4eb;
+  text-align:center;
   text-shadow: 6px 0px 5px rgba(0,0,0,0.07);
   z-index: 1000;
 `;
@@ -34,6 +35,7 @@ const CharacterListBox = styled.div`
   width: 68%;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 `;
 const CharacterItem = styled.div`
   display: flex;
